@@ -1,0 +1,13 @@
+[package]
+name = "template"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = { version = "4.5", features = ["derive", "env"] }
+tokio = { version = "1.37", features = ["macros", "rt-multi-thread"] }
+
+tracing-subscriber = { version = "0.3", features = ["fmt", "env-filter"] }
+tracing = "0.1.40"
+
+anyhow = "1.0.86"
